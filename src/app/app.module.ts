@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 //Rutas
 import {APP_ROUTING} from './app.routes';
 
+//Modules
+import {PagesModule} from './pages/pages.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
@@ -20,17 +23,18 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PagesComponent,
-    RegisterComponent
+    RegisterComponent,
+    //NopagefoundComponent,
+    //DashboardComponent,
+    //ProgressComponent,
+    //Graficas1Component,
+    //HeaderComponent,
+    //SidebarComponent,
+    //BreadcrumbsComponent,
+    //PagesComponent
   ],
   imports: [
+    PagesModule,
     BrowserModule,
     APP_ROUTING
   ],
