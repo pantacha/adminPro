@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 //Rutas
 import {APP_ROUTING} from './app.routes';
@@ -18,6 +19,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     PagesModule,
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
