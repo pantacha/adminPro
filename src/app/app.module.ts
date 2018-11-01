@@ -8,6 +8,9 @@ import {APP_ROUTING} from './app.routes';
 //Modules
 import {PagesModule} from './pages/pages.module';
 
+//Services
+import { ServiceModule } from './services/service.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
@@ -39,7 +42,8 @@ import { from } from 'rxjs';
     PagesModule,
     BrowserModule,
     APP_ROUTING,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

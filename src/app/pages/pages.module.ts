@@ -14,6 +14,7 @@ import { ProgressComponent } from "./progress/progress.component";
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { IncrementadorComponent } from "../components/incrementador/incrementador.component";
 import {DonutComponent} from '../components/graficas/donut.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import {DonutComponent} from '../components/graficas/donut.component';
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        DonutComponent
+        DonutComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
